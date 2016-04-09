@@ -16,8 +16,7 @@
  */
 
 var spacebrew = require('./spacebrew')
-  , persist_module = require('./persist_module_stef')
-  , persister = require('./spacebrew_live_persist')
+	, persister = require('./spacebrew_live_persist')
 	, logger = require('./logger')
 	;
 
@@ -33,8 +32,8 @@ var defaultPort = 9000
  */
 var printStartupMsg = function() {
 	console.log("");
-	console.log("running spacebrew");
-	console.log("slightly modified by somebody who doesn't really understand js. be carful.");
+	console.log("Running Spacebrew, start with argument '--help' to see available configuration arguments.");
+	console.log("More info at http://www.spacebrew.cc");
 	console.log("");
 }
 
@@ -163,7 +162,6 @@ var printHelp = function(){
 var main = function() {
 	var server_configs = {}
 		, persist_configs = {}
-		, stefsister_configs = {}
 		;
 
 	printStartupMsg();
@@ -189,18 +187,10 @@ var main = function() {
 			"port": defaultPort, 
 			"logLevel": logger.debugLevel 
 		}
-		persist_module_configs = { 
-			"host": "localhost", 
-			"port": defaultPort, 
-			"logLevel": logger.debugLevel 
-		}
         
         // create spacebrew server
 		spacebrew.createServer( server_configs );
-		persist_module.dieFunktion( persist_module_configs );
-
-		//if (persist) persister.persistRoutes( persist_configs); 
-    //disabled live persister
+		if (persist) persister.persistRoutes( persist_configs); 
 	}
 }
 

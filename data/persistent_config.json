@@ -1,0 +1,30 @@
+[
+  {
+    "publisher": {
+      "clientName": ".*",
+      "name": "tasten",
+      "clientRE": {},
+      "nameRE": {}
+    },
+    "subscriber": {
+      "clientName": ".*",
+      "name": "aufgabe",
+      "clientRE": {},
+      "nameRE": {}
+    }
+  },
+  {
+    "publisher": {
+      "clientName": ".*",
+      "name": "ergebnis",
+      "clientRE": {},
+      "nameRE": {}
+    },
+    "subscriber": {
+      "clientName": ".*",
+      "name": "display",
+      "clientRE": {},
+      "nameRE": {}
+    }
+  }
+]

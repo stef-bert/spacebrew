@@ -21,6 +21,6 @@ DerivedData
 *.app
 *.xcworkspace
 *.xcuserdatad
-persistent_config.json
-data/*
+data/routes/*
+data/log/*
 spacebrew_log*
