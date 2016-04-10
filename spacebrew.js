@@ -531,6 +531,12 @@ spacebrew.createServer = function( opts ){
         if (connection && !connection.spacebrew_is_admin){
             return false;
         }
+				
+				if (getClientAddress(connection)!="127.0.0.1"){ // allow rerouting just from internal persister (or admin on the same machine)
+					logger.log("info", "discarded unauthorized rerouting message from " + getClientAddress(connection));
+						return false; //		
+				}
+				
         //expected message format:
         //{route:{type:<add/remove>,
         //        publisher:{clientName:_____,name:____,type:_____,remoteAddress:_____},
