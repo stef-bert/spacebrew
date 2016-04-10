@@ -19,6 +19,10 @@ var setupLinks = function() {
         window.open("http://docs.spacebrew.cc");
         return false;		
 	})
+  $(".stef-link").on("click", function(event) {
+        window.open("https://github.com/stef-bert/spacebrew");
+        return false;		
+  })
 	$(".contact-link").on("click", function(event) {
         window.open("http://docs.spacebrew.cc/contact/");
         return false;		
