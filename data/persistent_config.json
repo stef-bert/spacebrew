@@ -8,7 +8,7 @@
     },
     "subscriber": {
       "clientName": ".*",
-      "name": "01-aufgabe",
+      "name": "01-ergebnis",
       "clientRE": {},
       "nameRE": {}
     }
@@ -22,7 +22,7 @@
     },
     "subscriber": {
       "clientName": ".*",
-      "name": "01-ergebnis",
+      "name": "01-aufgabe",
       "clientRE": {},
       "nameRE": {}
     }
