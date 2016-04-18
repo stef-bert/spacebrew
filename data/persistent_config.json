@@ -2,13 +2,13 @@
   {
     "publisher": {
       "clientName": ".*",
-      "name": "tasten",
+      "name": "01-ergebnis",
       "clientRE": {},
       "nameRE": {}
     },
     "subscriber": {
       "clientName": ".*",
-      "name": "aufgabe",
+      "name": "01-aufgabe",
       "clientRE": {},
       "nameRE": {}
     }
@@ -16,13 +16,13 @@
   {
     "publisher": {
       "clientName": ".*",
-      "name": "ergebnis",
+      "name": "01-aufgabe",
       "clientRE": {},
       "nameRE": {}
     },
     "subscriber": {
       "clientName": ".*",
-      "name": "display",
+      "name": "01-ergebnis",
       "clientRE": {},
       "nameRE": {}
     }
