@@ -400,6 +400,7 @@ spacebrew.createServer = function( opts ){
                         logger.log("debug", "[handleMessageMessage] ERROR sending message to client " + 
                         						sub.client.name + ", on subscriber " +
                         						sub.subscriber.name + " error message " + err );
+																		process.exit(); // i dont know. strange error. then restart.
                     }
                 }
             }
@@ -498,6 +499,7 @@ spacebrew.createServer = function( opts ){
                         logger.log("debug", "[handleBinaryMessage] ERROR sending message to client " + 
                                                 sub.client.name + ", on subscriber " +
                                                 sub.subscriber.name + " error message " + err );
+																								process.exit(); // i don't know. restart if strange error appears
                     }
                 }
             }

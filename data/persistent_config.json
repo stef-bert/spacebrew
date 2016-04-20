@@ -26,5 +26,33 @@
       "clientRE": {},
       "nameRE": {}
     }
+  },
+  {
+    "publisher": {
+      "clientName": ".*",
+      "name": "03-getstate",
+      "clientRE": {},
+      "nameRE": {}
+    },
+    "subscriber": {
+      "clientName": ".*",
+      "name": "03-getstate",
+      "clientRE": {},
+      "nameRE": {}
+    }
+  },
+  {
+    "publisher": {
+      "clientName": ".*",
+      "name": "03-state",
+      "clientRE": {},
+      "nameRE": {}
+    },
+    "subscriber": {
+      "clientName": ".*",
+      "name": "03-state",
+      "clientRE": {},
+      "nameRE": {}
+    }
   }
 ]
