@@ -54,5 +54,33 @@
       "clientRE": {},
       "nameRE": {}
     }
+  },
+  {
+    "publisher": {
+      "clientName": ".*",
+      "name": "04-ip",
+      "clientRE": {},
+      "nameRE": {}
+    },
+    "subscriber": {
+      "clientName": ".*",
+      "name": "04-ip",
+      "clientRE": {},
+      "nameRE": {}
+    }
+  },
+  {
+    "publisher": {
+      "clientName": ".*",
+      "name": "04-getip",
+      "clientRE": {},
+      "nameRE": {}
+    },
+    "subscriber": {
+      "clientName": ".*",
+      "name": "04-getip",
+      "clientRE": {},
+      "nameRE": {}
+    }
   }
 ]
